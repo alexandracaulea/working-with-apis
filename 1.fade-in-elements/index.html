@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Landing Page - fadein elements using Intersection Observer API</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav__trial">
+        <ul class="nav__list">
+          <li class="nav__list-item"><a class="nav__link" href="#">Articles</a></li class="nav__list-item">
+          <li class="nav__list-item"><button class="nav__link nav__link--button" href="#">Subscribe</button></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="landing__trial" role="main">
+      <section class="landing__trial-intro">
+        <h1>Daily articles about HTML, CSS and JavaScript.</h1>
+        <h2>Trusted by over 10,000 other developers</h2>
+        <form method="POST" name="landing__trial-form" action="#" class="landing__trial-form">
+          <input type="email" aria-label="Email Address" class="landing__trial-email" placeholder="Enter your email address" spellcheck="false"/>
+          <button type="submit" class="landing__trial-button">Subscribe</button>
+        </form>
+        <svg preserveAspectRatio="none" class="curved" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" aria-hidden="true" focusable="false">
+          <use xlink:href="#wave"></use>
+        </svg>
+      </section>
+      <div class="landing__trial-illustration">
+        <svg viewBox="0 0 400 300" fill="none" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="#illustration"></use>
+        </svg>
+      </div>
+      <section class="landing__trial-about">
+        <ul>
+          <li class="landing__trial-fade-in">
+            <svg aria-hidden="true" focusable="false" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#icon-one-trial"></use>
+            </svg>
+            <h3>Stay up to date with the front end technologies</h3>
+            <p>Useful tips for web designers and developers. You can unsubscribe any time.</p>
+          </li>
+          <li class="landing__trial-fade-in">
+            <svg aria-hidden="true" focusable="false" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#icon-two-trial"></use>
+            </svg>
+            <h3>Curated articles by our team</h3>
+            <p>
+              The newsletter is free of ads, sponsored posts, affiliate links and the rest annoying noise that we see
+              on the internet this days
+            </p>
+          </li>
+          <li class="landing__trial-fade-in">
+            <svg aria-hidden="true" focusable="false" width="21" height="20" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#icon-three-trial"></use>
+            </svg>
+            <h3>Trusted by over 10,000 other developers worldwide</h3>
+            <p>You will receive free tips and tutorials daily.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="landing__trial-testimonial">
+        <blockquote>
+          <p>
+            "I began my journey to become a front end developer about 1 year ago, and I would spend every day reading
+            your newsletter articles. It is an invaluable resource, thank you."
+          </p>
+          <footer>John C., CEO LOPYI</footer>
+          <form method="POST" name="landing__trial-form" action="#" class="landing__trial-form">
+            <button type="submit" class="landing__trial-button">Subscribe</button>
+          </form>
+        </blockquote>
+      </section>
+    </main>
+    <footer class="landing__trial-footer">
+      <p>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </p>
+    </footer>
+    <script src="js/intersection-observer-polyfill.js"></script>
+    <script src="js/app.js"></script>
+    <svg aria-hidden="true" focusable="false" style="display: none">
+      <symbol id="wave" viewBox="0 0 1440 320">
+        <path fill="#fff" fill-opacity="1" d="M0,256L48,234.7C96,213,192,171,288,170.7C384,171,480,213,576,240C672,267,768,277,864,272C960,267,1056,245,1152,245.3C1248,245,1344,267,1392,277.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      </symbol>
+      <symbol id="icon-one-trial" width="20" height="20">
+        <path d="M18 0H2a2 2 0 00-2 2v1a1 1 0 002 0 1 1 0 011-1h14a1 1 0 011 1v8a1 1 0 01-1 1h-4a2 2 0 00-2 2v4a2 2 0 002 2h3a1 1 0 000-2h-2a1 1 0 01-1-1v-2a1 1 0 011-1h4a2 2 0 002-2V2a2 2 0 00-2-2M8 17V8a1 1 0 00-1-1H3a1 1 0 00-1 1v9a1 1 0 001 1h4a1 1 0 001-1M2 5h6a2 2 0 012 2v11a2 2 0 01-2 2H2a2 2 0 01-2-2V7a2 2 0 012-2m4.042 10a1 1 0 11-2 0 1 1 0 012 0" fill="#8e2de2" fill-rule="evenodd"/>
+      </symbol>
+      <symbol id="icon-two-trial" width="20" height="20">
+        <path d="M7.172 7.414A.999.999 0 118.586 6l.707.707 2.122-2.121A.999.999 0 1112.829 6L9.293 9.535 7.172 7.414zM17 10V6.916L18 10h-1zm1 6.916c0 .553-.447 1.084-1 1.084H3c-.552 0-1-.531-1-1.084V12h3c.553 0 1 .364 1 .916v1C6 15.021 6.896 16 8 16h4c1.105 0 2-.979 2-2.084v-1c0-.552.448-.916 1-.916h3v4.916zm-15-10V10H2l1-3.084zm2-4C5 2.364 5.448 2 6 2h8c.553 0 1 .364 1 .916V10h-1c-1.104 0-2 .812-2 1.916v1c0 .553-.447 1.084-1 1.084H9c-.552 0-1-.531-1-1.084v-1C8 10.812 7.105 10 6 10H5V2.916zM18 4h-1V1.916C17 .812 16.105 0 15 0H5C3.896 0 3 .812 3 1.916V4H2L0 9.916v8C0 19.021.896 20 2 20h16c1.105 0 2-.979 2-2.084v-8L18 4z" fill="#8e2de2" fill-rule="evenodd"/>
+      </symbol>
+      <symbol id="icon-three-trial" width="21" height="20">
+        <path d="M16.8 18h2.1V2h-2.1v16zm-2.1 2H21V0h-6.3v20zm-5.25-2h2.1V6h-2.1v12zm-2.1 2h6.3V4h-6.3v16zM2.1 18h2.1v-6H2.1v6zM0 20h6.3V10H0v10z" fill="#8e2de2" fill-rule="evenodd"/>
+      </symbol>
+      <symbol id="illustration" viewBox="0 0 400 300">
+        <path d="M40.998 81.296l1.99-3.074a46.104 46.104 0 00-2.042-4.778l-1.286 1.039 1.019-1.575c-.971-1.91-1.735-3.115-1.735-3.115s-3.99 6.288-5.323 12.945l2.553 3.946-2.826-2.283c-.101.776-.153 1.557-.155 2.339 0 7.884 2.575 14.275 5.75 14.275 3.177 0 5.752-6.391 5.752-14.275a24.555 24.555 0 00-1.315-7.367l-2.382 1.923z" fill="#6C5B7B"/><path d="M55.08 88.132l3.58-.768a46.127 46.127 0 001.936-4.822l-1.644-.174 1.833-.393c.665-2.038.976-3.43.976-3.43s-7.267 1.625-12.917 5.39l-.985 4.595-.384-3.613c-.62.477-1.209.993-1.763 1.544-5.575 5.575-8.274 11.916-6.028 14.162 2.246 2.246 8.586-.453 14.161-6.028a24.554 24.554 0 004.28-6.14l-3.045-.323z" fill="#6C5B7B"/><path d="M56.388 118.64c-8.304.531-17.352-.031-26.977 0V96.602c8.481 1.32 17.526 1.185 26.977 0v22.038z" fill="#3F3D56"/><path d="M399.392 125.557h-112.11v145.392h112.11V125.557zM58.974 133.147h-5.839v137.802h5.84V133.147z" fill="#E6E6E6"/><path d="M399.392 115.63H0v11.678h399.392V115.63zM61.894 127.308H50.216v11.678h11.678v-11.678z" fill="#E6E6E6"/><path d="M352.168 134.023l-.657 2.628h-16.349l-.985-2.628h-41.64v26.86h101.599v-26.86h-41.968zM352.168 167.89l-.657 2.627h-16.349l-.985-2.627h-41.64v26.859h101.599V167.89h-41.968zM352.168 201.756l-.657 2.628h-16.349l-.985-2.628h-41.64v26.86h101.599v-26.86h-41.968zM352.168 235.623l-.657 2.628h-16.349l-.985-2.628h-41.64v26.86h101.599v-26.86h-41.968z" fill="#3F3D56"/><path d="M216.629 113.878h-34.45l1.167-15.181h32.115l1.168 15.181z" fill="#E6E6E6"/><path d="M218.965 112.127h-38.538v3.503h38.538v-3.503z" fill="#E6E6E6"/><path d="M265.385.893H133.714a3.503 3.503 0 00-3.503 3.503v80.287h138.678V4.396a3.503 3.503 0 00-3.504-3.503z" fill="#3F3D56"/><path d="M130.211 84.683v13.138a3.502 3.502 0 003.503 3.504h131.671a3.504 3.504 0 003.504-3.504V84.683H130.211z" fill="#E6E6E6"/><path d="M262.174 8.192H137.218V78.26h124.956V8.192z" fill="#fff"/><path d="M199.696 96.361a3.503 3.503 0 100-7.006 3.503 3.503 0 000 7.006z" fill="#3F3D56"/><path d="M211.431 27.97h-33.692v1.934h33.692V27.97zM229.767 35.025h-52.028v1.934h52.028v-1.934z" fill="#8E2DE2"/><path d="M220.141 41.672h-42.402v1.934h42.402v-1.934z" fill="#3F3D56"/><path d="M202.493 48.293h-24.754v1.934h24.754v-1.934zM215.098 54.915h-37.359v1.934h37.359v-1.934z" fill="#3F3D56"/><path d="M166.509 27.283h-4.126v4.125h4.126v-4.125zM166.509 33.93h-4.126v4.125h4.126v-4.126z" fill="#8E2DE2"/><path d="M166.509 40.576h-4.126v4.126h4.126v-4.126z" fill="#3F3D56"/><path d="M166.509 47.223h-4.126v4.125h4.126v-4.125zM166.509 53.87h-4.126v4.125h4.126v-4.126z" fill="#3F3D56"/><path d="M127.737 66.56l-7.274-1.774a18.724 18.724 0 01-18.378-22.434 24.479 24.479 0 0124.445-24.507 24.477 24.477 0 0124.507 24.445c4.124 14.352-8.792 27.806-23.3 24.27z" fill="#464159"/><path d="M135.682 69.118c9.933 0 17.985-8.052 17.985-17.984 0-9.933-8.052-17.985-17.985-17.985-9.932 0-17.984 8.052-17.984 17.985 0 9.932 8.052 17.984 17.984 17.984z" fill="#FFB8B8"/><path d="M123.953 60.517s-5.473 18.766-8.601 20.33c-3.128 1.564 25.022 3.91 25.022 3.91s-.782-17.985.782-19.549c1.564-1.563-17.203-4.691-17.203-4.691z" fill="#FFB8B8"/><path d="M152.103 176.244s35.187-3.128 39.879 8.601c4.691 11.729-3.128 81.321-3.128 81.321h-14.857v-57.081s-63.347-18.006-63.347-24.262c0-6.255 41.453-8.579 41.453-8.579z" fill="#2F2E41"/><path d="M186.508 263.039l7.82 3.127s9.383-.782 5.473 6.256a15.475 15.475 0 01-10.947 7.819s-14.857 5.474-15.639 0c-.782-5.473 3.91-16.421 3.91-16.421l9.383-.781zM132.555 176.244s35.187-3.128 39.878 8.601c4.692 11.729-3.127 81.321-3.127 81.321h-14.857v-57.081s-44.967-10.416-44.967-16.671c0-2.939-3.064-17.874 2.336-21.021 6.094-3.551 20.737 4.851 20.737 4.851z" fill="#2F2E41"/><path d="M166.96 263.039l7.819 3.127s9.383-.782 5.474 6.256a15.475 15.475 0 01-10.947 7.819s-14.857 5.474-15.639 0c-.782-5.473 3.909-16.421 3.909-16.421l9.384-.781z" fill="#2F2E41"/><path d="M116.134 78.501l23.499 2.555a17.308 17.308 0 0115.063 13.628l9.136 43.245s3.128 43.006-3.128 45.352c-6.255 2.346-14.857-9.383-26.586-7.819-11.729 1.564-26.976 5.082-26.976 5.082s-2.422-76.98-2.737-83.276c-.631-12.587 11.729-18.767 11.729-18.767z" fill="#4A47A3"/><path d="M171.797 178.478l9.647 5.681s17.307-2.483 16.767 3.6c-.54 6.083-19.433 4.908-19.433 4.908l-11.626-7.164 4.645-7.025z" fill="#FFB8B8"/><path d="M100.774 36.507c6.416 0 11.618-5.202 11.618-11.618s-5.202-11.617-11.618-11.617-11.617 5.201-11.617 11.617c0 6.416 5.201 11.618 11.617 11.618z" fill="#464159"/><path d="M111.493 18.644a11.614 11.614 0 00-4.259-8.978A11.61 11.61 0 0097.59 7.27a11.612 11.612 0 117.242 21.884 11.601 11.601 0 006.661-10.51zM121.46 25.233l15.662-2.884 12.044 7.549a18.274 18.274 0 018.417 17.83l-12.064-3.057-2.701-6.773-3.217 5.273-16.821 21.647-9.444-6.014-8.419-13.195 16.543-20.376z" fill="#464159"/><path d="M134.357 85.153l7.82-3.91s16.42 2.346 19.548 13.293c3.128 10.947 17.203 86.795 17.203 86.795l-13.293 6.256-18.767-46.135-12.511-56.299z" fill="#4A47A3"/><path opacity=".2" d="M141.014 115.922l7.826 30.377 13.877 34.116-.481 1.182-16.551-34.728-4.671-30.947z" fill="#000"/><path d="M82.62 283.446l-2.76-.95 26.736-79.413 3.865 1.331-27.84 79.032zM184.808 283.446l2.76-.95-26.736-79.413-3.864 1.331 27.84 79.032zM128.314 299.847l2.919.011.907-92.832-4.087-.015.261 92.836z" fill="#3F3D56"/><path d="M75.863 156.421l8.008 32.367a25.71 25.71 0 0018.718 18.763 136.627 136.627 0 0067.977-.438l11.957-3.154c6.947-1.832 12.171-7.799 12.666-14.967a14.734 14.734 0 00-1.473-7.676 19.533 19.533 0 00-16.972-10.974l-12.667-.409-46.128-20.436s-15.865-8.059-28.907-8.961c-8.613-.595-15.252 7.504-13.179 15.885z" fill="#3F3D56"/><path d="M357.058 54.612h-45.544v61.894h45.544V54.612z" fill="#E6E6E6"/><path d="M351.803 61.754h-35.034v47.61h35.034v-47.61z" fill="#fff"/><path d="M347.532 74.213h-16.975v1.934h16.975v-1.934zM325.166 73.142h-4.126v4.126h4.126v-4.126zM347.532 82.388h-16.975v1.934h16.975v-1.934zM325.166 81.317h-4.126v4.126h4.126v-4.126z" fill="#8E2DE2"/><path d="M347.532 90.562h-16.975v1.934h16.975v-1.934zM325.166 89.492h-4.126v4.125h4.126v-4.125zM336.038 58.115a1.752 1.752 0 10-3.503 0 1.752 1.752 0 003.503 0z" fill="#3F3D56"/>
+      </symbol>
+    </svg>
+  </body>
+</html>
