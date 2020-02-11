@@ -6,8 +6,6 @@
 }
 
 :root {
-  --clr-orange: #f39422;
-  --clr-dark: #1b262c;
   --clr-light: #f5f5f5;
   --clr-white: #fff;
   --clr-dark-blue: #293a80;
@@ -45,6 +43,7 @@ button:-moz-focusring {
 }
 
 :focus {
+  --clr-orange: #f39422;
   outline: 2px dotted var(--clr-orange);
 }
 
@@ -54,6 +53,7 @@ body {
   background-image: url(../img/illustration.svg);
   background-repeat: no-repeat round;
   font-family: "Open Sans", sans-serif;
+  --clr-dark: #1b262c;
   color: var(--clr-dark);
 }
 
