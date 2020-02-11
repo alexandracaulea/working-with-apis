@@ -217,6 +217,8 @@ ul {
   display: block;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  width: 100%;
+  margin-bottom: -10px;
 }
 
 .landing__trial-illustration {
