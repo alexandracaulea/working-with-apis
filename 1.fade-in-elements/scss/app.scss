@@ -5,9 +5,7 @@
   --dark--black: #222831;
   --dark--blue: #35477d;
   --dark-purple: #3e206d;
-  --darker--blue: #0f4c75;
   --purple--gradient: linear-gradient(to right, #4a00e0, #8e2de2);
-  --blue--gradient: linear-gradient(to right, #89fffd, #ef32d9);
 }
 
 :focus {
@@ -115,7 +113,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #8e2de2;
+  background-color: #8e2de2;
   background-image: var(--purple--gradient);
   text-align: center;
   color: var(--light--color);
@@ -177,6 +175,7 @@ ul {
   letter-spacing: 1px;
   border: none;
   border-radius: 3px;
+  --darker--blue: #0f4c75;
   background-color: var(--darker--blue);
   color: var(--light--color);
   cursor: pointer;
@@ -272,6 +271,7 @@ ul {
     margin: 0 auto 1rem;
     background: #ef32d9;
     color: var(--dark--black);
+    --blue--gradient: linear-gradient(to right, #89fffd, #ef32d9);
     background: var(--blue--gradient);
     -webkit-background-clip: text;
     background-clip: text;
