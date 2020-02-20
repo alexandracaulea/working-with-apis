@@ -1,7 +1,7 @@
 {
   "name": "io",
   "version": "1.0.0",
-  "description": "",
+  "description": "1. Landing Page concept having fade in elements, live example on [codepen](https://codepen.io/alexandracaulea/full/mdygyxV)\r 2. Accept Terms and Conditions example on [codepen](https://codepen.io/alexandracaulea/full/VwYOPKM)\r 3. Lazy loading images on [copen](https://codepen.io/alexandracaulea/full/MWwgbEv)",
   "main": "index.js",
   "scripts": {},
   "repository": {
@@ -16,5 +16,6 @@
   "homepage": "https://github.com/alexandracaulea/intersection-observer#readme",
   "dependencies": {
     "intersection-observer": "^0.7.0"
-  }
+  },
+  "devDependencies": {}
 }
