@@ -19,7 +19,7 @@ function displayJobInformation() {
 
 function addBtnEvents() {
   const btns = jobsContainer.querySelectorAll(".job__description__btn");
-  btns.forEach(btn => btn.addEventListener("click", displayJobInformation));
+  btns.forEach((btn) => btn.addEventListener("click", displayJobInformation));
 }
 
 function formatDate(date) {
@@ -58,7 +58,7 @@ async function displayJobs(jobs) {
     return;
   }
   const html = jobs.map(
-    job => `
+    (job) => `
       <li class="job__list">
         <div class="job__information">
           <figure class="job__logo">
@@ -68,7 +68,9 @@ async function displayJobs(jobs) {
             <h2 class="job__title" title="${job.title}">${truncateHeading(job.title)}</h2>
             <span class="job__type">${job.type}</span>
             <p class="job__postedby">
-              <a class="external-link-company" href="${job.company_url}" rel="noopener">${job.company}</a>
+              <a class="external-link-company" href="${job.company_url}" target="_blank" rel="noopener noreferrer">${
+      job.company
+    }</a>
             </p>
             <p class="job__location"> 
               <svg aria-hidden="true" width="11" height="13" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path d="M10.044 5.168c0 2.81-4.996 10.767-4.996 10.767S.052 7.978.052 5.168c0-.668.13-1.33.38-1.948a5.095 5.095 0 011.083-1.65A4.99 4.99 0 013.135.465a4.917 4.917 0 013.825 0 4.99 4.99 0 011.621 1.103A5.095 5.095 0 019.664 3.22c.25.618.38 1.28.38 1.948z" fill="#FD7792"/><path d="M5.048 6.351c.834 0 1.51-.688 1.51-1.538 0-.85-.676-1.538-1.51-1.538s-1.51.689-1.51 1.538c0 .85.676 1.538 1.51 1.538z" fill="#fff"/></g><defs><clipPath id="clip0"><path fill="#fff" d="M0 0h10.105v16H0z"/></clipPath></defs></svg>
@@ -149,5 +151,5 @@ function handleFocus() {
 
 // Event Listeners
 searchJobForm.addEventListener("submit", handleFormSubmit);
-inputs.forEach(input => input.addEventListener("focus", handleFocus));
-inputs.forEach(input => input.addEventListener("blur", handleFocus));
+inputs.forEach((input) => input.addEventListener("focus", handleFocus));
+inputs.forEach((input) => input.addEventListener("blur", handleFocus));
