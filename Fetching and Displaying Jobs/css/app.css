@@ -271,26 +271,14 @@ label {
 
 @media (min-width: 650px) {
   .job__container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     max-width: 1200px;
-  }
-
-  .job__list {
-    flex: 1 0 30%;
   }
 }
 
 .job__list.current {
-  flex-basis: 100%;
-}
-
-@media (min-width: 800px) {
-  .job__list.current {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 20px;
-  }
+  grid-column: 1 / -1;
 }
 
 .job__list .job__description {
@@ -316,10 +304,14 @@ label {
 
 .job__list.current .job__description {
   display: block;
+  margin-top: 2em;
 }
 
 .job__list.current .job__description__btn {
-  margin-top: 0;
+  --blueClr: #6a79c4;
+  background-color: var(--blueClr);
+  color: var(--whiteClr);
+  border-color: var(--blueClr);
 }
 
 .job__description__btn {
