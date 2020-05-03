@@ -62,7 +62,9 @@ async function displayJobs(jobs) {
       <li class="job__list">
         <div class="job__information">
           <figure class="job__logo">
-            <img src=${handleMissingLogo(job.company_logo)} alt="${job.company}" width="100" height="100" />
+            <img loading="lazy" src=${handleMissingLogo(job.company_logo)} alt="${
+      job.company
+    }" width="100" height="100" />
           </figure>
           <div class="job__summary">
             <h2 class="job__title" title="${job.title}">${truncateHeading(job.title)}</h2>
