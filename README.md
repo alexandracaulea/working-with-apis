@@ -1,9 +1,12 @@
-# My Web Projects With Vanilla JavaScript using Web APIs
+# Working with Web APIs
 
-This is the main repository for all of my projects using Intersection Observer API.
+Projects that I've worked so far using Web APIs.
 
-|  #  |            API            |                                                               Project name                                                                | Live Demo on CodePen                                         |
-| :-: | :-----------------------: | :---------------------------------------------------------------------------------------------------------------------------------------: | ------------------------------------------------------------ |
-| 1.  | Intersection Observer API |  [Landing Page concept having fade in elements](https://github.com/alexandracaulea/intersection-observer/tree/master/1.fade-in-elements)  | [Live Demo](https://codepen.io/alexandracaulea/full/mdygyxV) |
-| 2.  | Intersection Observer API | [Accept Terms and Conditions example](https://github.com/alexandracaulea/intersection-observer/tree/master/2.accept-terms-and-conditions) | [Live Demo](https://codepen.io/alexandracaulea/full/VwYOPKM) |
-| 3.  |      GitHub Jobs API      |    [Fetching jobs from GitHub Jobs API using axios](https://github.com/alexandracaulea/working-with-apis/tree/master/3.fetching-jobs)     | [Live Demo](https://codepen.io/alexandracaulea/full/VwLBGOj) |
+## Fetching data from an API
+
+1. Fetching Jobs from GitHub Jobs API and and displaying them - [Code on GitHub](https://github.com/alexandracaulea/working-with-apis/tree/master/Fetching%20and%20Displaying%20Jobs) - [Live example on CodePen](https://codepen.io/alexandracaulea/full/VwLBGOj)
+
+## Intersection Observer API
+
+1. Sign up Landing Page - [Code on GitHub](https://github.com/alexandracaulea/working-with-apis/tree/master/Sign%20up%20Landing%20Page) - [Live example on CodePen](https://codepen.io/alexandracaulea/full/mdygyxV)
+2. Accept Terms and Conditions Component - [Code on GitHub](https://github.com/alexandracaulea/working-with-apis/tree/master/Accept%20Terms%20and%20Conditions%20Component) - [Live example on CodePen](https://codepen.io/alexandracaulea/full/VwYOPKM)
