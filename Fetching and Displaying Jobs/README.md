@@ -4,7 +4,7 @@ Allows a user to search and view jobs posted on GitHub. It uses [GitHub Jobs API
 
 To fetch data I’ve used the [axios](https://github.com/axios/axios) library.
 
-I've also used [CORS Anywhere](https://cors-anywhere.herokuapp.com/) to add CORS header for each request made to GitHub jobs API.
+I've also deployed a [CORS Anywhere](https://polar-caverns-16644.herokuapp.com/) server to Heroku to add CORS header for each request made to GitHub jobs API.
 
 ## User Stories
 

@@ -1,5 +1,5 @@
 const endpoint = "https://jobs.github.com/positions.json";
-const proxy = "https://cors-anywhere.herokuapp.com/";
+const proxy = "https://polar-caverns-16644.herokuapp.com/";
 const searchJobForm = document.querySelector(".search");
 const submitFormButton = searchJobForm.querySelector("[name='submit']");
 const inputs = searchJobForm.querySelectorAll("input");
