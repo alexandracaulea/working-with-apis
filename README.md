@@ -10,3 +10,8 @@ Projects that I've worked so far using Web APIs.
 
 1. Sign up Landing Page - [Code on GitHub](https://github.com/alexandracaulea/working-with-apis/tree/master/Sign%20up%20Landing%20Page) - [Live example on CodePen](https://codepen.io/alexandracaulea/full/mdygyxV)
 2. Accept Terms and Conditions Component - [Code on GitHub](https://github.com/alexandracaulea/working-with-apis/tree/master/Accept%20Terms%20and%20Conditions%20Component) - [Live example on CodePen](https://codepen.io/alexandracaulea/full/VwYOPKM)
+
+### My editor and extensions
+
+I've used [VS Code](https://code.visualstudio.com/) as the editor.
+As the extensions, I've used [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) and [Sass](https://marketplace.visualstudio.com/items?itemName=Syler.sass-indented) on few of my projects.
